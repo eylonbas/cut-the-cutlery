@@ -1,17 +1,13 @@
-/* normalize css starts here */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/* normalize css ends here */
-
-
-html {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-    color: #222;
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -19,7 +15,7 @@ body {
     height: 300px;
 }
 
-.app {
+.app {    
     height: 100%;
     display: flex;
     align-items: center;
@@ -27,66 +23,43 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    cursor: default;
 }
 
 .title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    color: #2c5dcd;
+    margin: 5px;
+    background: white;
+    padding: 0 5px;
 }
 
 .subtitle {
-    font-size: 12px;
+    font-weight: 600;
+    color: #166e00;
+    background: white;
+    padding: 0 5px;
 }
 
-code {
-    font-size: 12px;
-    font-family: inherit;
-    background-color: rgba(254, 237, 185, .3);
-    padding: 2px 4px;
-    border-radius: 2px;
-}
-
-.counter-label {
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-.counter {
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.button-container {
-    margin-top: 15px;
-}
-
-.button {
-    border: 0;
-    display: inline-block;
-    padding: 10px 20px;
-    margin-right: 4px;
-    margin-left: 4px;
-    background-color: bisque;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
+.app__footer {
     text-decoration: none;
-    transition: transform .2s ease;
-    user-select: none;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 8px;
+    border-top: 1px solid lightgrey;
+    color: grey;
+    direction: ltr;
+    background: white;
 }
 
-.button:focus {
-    outline: none;
-}
-
-.button:hover {
-    transform: scale(1.1);
-}
-
-.divider {
-    margin: 30px auto 25px;
-    width: 50px;
-    border: .5px dashed #000;
-    opacity: .1;
-}
+#canvas_container_div {
+    position: absolute;
+    bottom: 30px;
+    opacity: 15%;
+    z-index: -1;
+  }
+  
+  #canvas {
+    width: 100%;
+    height: 100%;
+  }

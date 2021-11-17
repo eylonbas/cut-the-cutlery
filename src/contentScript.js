@@ -11,7 +11,7 @@ const cutleryAvoider = {
     noCutleryCheckbox: '#dont_want_cutlery',
     noCutleryLabel: 'label[for="dont_want_cutlery"]',
     cutTheCutleryInfo: '#cut-the-cutlery-info',
-    confirmCheckoutButton: 'TBD' // todo
+    checkoutSubmitButton: '[data-test-id="checkoutSubmitOrderBtn"]'
   },
   init: () => {
     cutleryAvoider.listenProceedToCheckoutRender();
@@ -35,9 +35,9 @@ const cutleryAvoider = {
       }
     });
     elementRenderListener.listenElementRender({
-      selector: cutleryAvoider.selectors.confirmCheckoutButton,
-      onRenderCallback: (confirmCheckoutButton) => {
-        confirmCheckoutButton.addEventListener('click', () => {
+      selector: cutleryAvoider.selectors.checkoutSubmitButton,
+      onRenderCallback: (checkoutSubmitButton) => {
+        checkoutSubmitButton.addEventListener('click', () => {
           if (cutleryAvoider.isNoCutleryCheckboxChecked()) {
             countapi.hit(cutleryAvoider.counter.namespace, cutleryAvoider.counter.key);
           }
@@ -67,17 +67,35 @@ const cutleryAvoider = {
     element.id = cutleryAvoider.selectors.cutTheCutleryInfo.substring(1);
 
     // content
-    element.append(`כבר סימנו בשבילך ללא חד פעמי ♥️`);
+    const firstRow = document.createElement('span');
+    firstRow.append(`כבר סימנו בשבילך ללא חד פעמי 💚`);
+    element.append(firstRow);
+
     element.append(document.createElement('br'));
-    element.append(`עד היום חסכנו ${currentCutsCount} סכו"ם חד פעמי, רוצה להיות ה-${currentCutsCount + 1}?`);
+
+    const secondRow = document.createElement('span');
+    const currentCutsCountStringified = currentCutsCount.toLocaleString('en-US');
+    const nextCutsCountStringified = (currentCutsCount + 1).toLocaleString('en-US');
+    secondRow.append(`עד היום חסכנו ${currentCutsCountStringified} סכו"ם חד פעמי, רוצה להיות ה-${nextCutsCountStringified}?`);
+    element.append(secondRow);
 
     // style
+    const rowStyle = {
+      backgroundColor: '#254827',
+      padding: '0 4px',
+      color: 'white',
+      letterSpacing: '0.5px'
+    };
+    Object.assign(firstRow.style, rowStyle);
+    Object.assign(secondRow.style, rowStyle);
+    
+    const backgroundImageUrl = chrome.extension.getURL('images/plants-background.jpg');
     const elementStyle = { 
       textAlign: 'center',
       marginTop: '6px',
-      backgroundColor: 'green',
-      color: '#f4fdf4',
-      padding: '5px',
+      backgroundImage: `url(${backgroundImageUrl})`,
+      backgroundColor: '#254827',
+      padding: '8px',
       lineHeight: '18px'
     };
     Object.assign(element.style, elementStyle);

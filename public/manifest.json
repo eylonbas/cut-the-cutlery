@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "CutTheCutlery",
+  "name": "Cut the cutlery",
   "version": "0.1.0",
   "description": "Cut the cutlery to save the earth",
   "icons": {
@@ -16,11 +16,14 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "CutTheCutlery",
+    "default_title": "Cut the cutlery",
     "default_popup": "popup.html"
   },
   "permissions": [
     "storage"
+  ],
+  "web_accessible_resources": [
+    "images/plants-background.jpg"
   ],
   "content_scripts": [
     {
