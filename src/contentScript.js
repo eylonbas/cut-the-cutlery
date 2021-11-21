@@ -96,18 +96,17 @@ const cutleryAvoider = {
       backgroundImage: `url(${backgroundImageUrl})`,
       backgroundColor: '#254827',
       padding: '8px',
-      lineHeight: '18px',
-      cursor: 'default',
-      userSelect: 'none'
+      lineHeight: '18px'
     };
     Object.assign(element.style, elementStyle);
 
-    // functionality
-    element.addEventListener('click', () => {
-      chrome.runtime.sendMessage({ eventType: '10bis-checkout-info-click' });
-    });
+    const linkWrapper = document.createElement('a');
+    linkWrapper.title = '#shameless_advertising';
+    linkWrapper.href = 'https://www.linkedin.com/in/eylon-basirtman/';
+    linkWrapper.target = '_blank';
+    linkWrapper.append(element);
 
-    return element;
+    return linkWrapper;
   },
   isNoCutleryCheckboxChecked: () => {
     const noCutleryCheckbox = document.querySelector(cutleryAvoider.selectors.noCutleryCheckbox);
