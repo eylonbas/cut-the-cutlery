@@ -7,13 +7,13 @@ CutTheCutlery is a chrome extensions that auto checks "no plastic cutlery" for y
 🌍🍴 Together, we will save the earth 🌍🍴
 
 ------------
-####Find us in the chrome extension store!
+## Find us in the chrome extension store!
 
 TBD chrome extension store link
 
 ------------
 
-##### How do we measure the impact?
+## How do we measure the impact?
 In your 10bis checkout popup, you are going to see how many cutlery sets the extension has already saved:
 
 ![10bis checkout popup](https://user-images.githubusercontent.com/60513876/142777460-fc7d107d-b423-4b0d-88e9-23dd1af0dfc8.png "10bis checkout popup")
