@@ -96,9 +96,16 @@ const cutleryAvoider = {
       backgroundImage: `url(${backgroundImageUrl})`,
       backgroundColor: '#254827',
       padding: '8px',
-      lineHeight: '18px'
+      lineHeight: '18px',
+      cursor: 'default',
+      userSelect: 'none'
     };
     Object.assign(element.style, elementStyle);
+
+    // functionality
+    element.addEventListener('click', () => {
+      chrome.runtime.sendMessage({ eventType: '10bis-checkout-info-click' });
+    });
 
     return element;
   },

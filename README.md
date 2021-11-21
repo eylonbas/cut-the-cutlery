@@ -1,21 +1,19 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> Cut The Cutlery
+## Cut The Cutlery
+When ordering via 10bis, we need to manually check `ללא סכו"ם חד פעמי` every order 🤔
 
-My Chrome Extension
+CutTheCutlery is a chrome extensions that auto checks "no plastic cutlery" for you on the 10bis checkout stage.
 
-## Features
+🌍🍴 Together, we will save the earth 🌍🍴
 
-- Feature 1
-- Feature 2
+------------
+####Find us in the chrome extension store!
+###### TBD chrome extension store link
 
-## Install
+------------
 
-[**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+##### How do we measure the impact?
+In your 10bis checkout popup, you are going to see how many cutlery sets the extension has already saved:
 
-## Contribution
+![10bis checkout popup](https://user-images.githubusercontent.com/60513876/142777460-fc7d107d-b423-4b0d-88e9-23dd1af0dfc8.png "10bis checkout popup")
 
-Suggestions and pull requests are welcomed!.
-
----
-
-This project was bootstrapped with [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli)
-
+On your order submission, CutTheCutlery automatically increments the global counter by 1.
