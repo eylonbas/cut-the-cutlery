@@ -26,7 +26,18 @@
       ],
       "run_at": "document_idle",
       "js": [
-        "contentScript.js"
+        "contentScript.js",
+        "scripts/10bis.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.mysodexo.co.il/new_order2.aspx*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "contentScript.js",
+        "scripts/cibus.js"
       ]
     }
   ]

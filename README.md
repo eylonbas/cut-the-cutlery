@@ -1,7 +1,7 @@
 # Cut The Cutlery
 
-When ordering via 10bis, we need to manually check `ללא סכו"ם חד פעמי` every order 🤔
-CutTheCutlery is a chrome extensions that auto checks "no plastic cutlery" for you on the 10bis checkout stage.
+When ordering via 10bis and Cibus, we need to manually check `ללא סכו"ם חד פעמי` every order 🤔
+CutTheCutlery is a chrome extensions that auto checks "no plastic cutlery" for you on the checkout stage.
 
 🌍🍴 Together, we will save the earth 🌍🍴
 
@@ -10,7 +10,7 @@ CutTheCutlery is a chrome extensions that auto checks "no plastic cutlery" for y
 TBD chrome extension store link
 
 ## How do we measure the impact?
-In your 10bis checkout popup, you are going to see how many cutlery sets the extension has already saved:
+On your checkout stage, you are going to see how many cutlery sets the extension has already saved:
 
 ![10bis checkout popup](https://user-images.githubusercontent.com/60513876/142777460-fc7d107d-b423-4b0d-88e9-23dd1af0dfc8.png "10bis checkout popup")
 
