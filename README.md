@@ -17,10 +17,10 @@ TBD chrome extension store link
 ## How do we measure the impact?
 On your checkout stage, you are going to see how many cutlery sets the extension has already saved:
 
-10bis:
+10bis:  
 ![10bis checkout stage](https://user-images.githubusercontent.com/60513876/142777460-fc7d107d-b423-4b0d-88e9-23dd1af0dfc8.png "10bis checkout stage")
 
-Cibus:
+Cibus:  
 ![Cibus checkout stage](https://user-images.githubusercontent.com/60513876/143608124-92e40e69-5cc3-422e-b252-0ff426992286.png "Cibus checkout stage")
 
 On your order submission, CutTheCutlery automatically increments the global counter by 1.
