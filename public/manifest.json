@@ -13,9 +13,6 @@
     "default_title": "Cut the cutlery",
     "default_popup": "popup.html"
   },
-  "permissions": [
-    "storage"
-  ],
   "web_accessible_resources": [
     "images/plants-background.jpg"
   ],
