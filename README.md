@@ -1,9 +1,9 @@
 # Cut The Cutlery
 
-On every **10bis** orders we need to manually check `ללא סכו"ם חד פעמי`  
+In **10bis** orders the `ללא סכו"ם חד פעמי` checkbox is disabled by default
 **CutTheCutlery** will auto check "no plastic cutlery" for you on the checkout stage
 
-In **Cibus** orders the the `ללא סכו"ם חד פעמי`   checkbox is disabled by default, but we can still help!  
+In **Cibus** orders the the `עם סכו"ם חד פעמי` checkbox is disabled by default, but we can still help!  
 **CutTheCutlery** will auto write "❌🍴 Please no plastic cutlery 🍴❌" in the notes to restaurant textbox
 
 
