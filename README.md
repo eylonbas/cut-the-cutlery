@@ -1,6 +1,6 @@
 # Cut The Cutlery
 
-In **10bis** orders the `ללא סכו"ם חד פעמי` checkbox is disabled by default
+In **10bis** orders the `ללא סכו"ם חד פעמי` checkbox is disabled by default  
 **CutTheCutlery** will auto check "no plastic cutlery" for you on the checkout stage
 
 In **Cibus** orders the the `עם סכו"ם חד פעמי` checkbox is disabled by default, but we can still help!  
