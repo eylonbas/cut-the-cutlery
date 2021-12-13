@@ -27,8 +27,8 @@ const elementRenderListener = {
     handleElementRenderInterval: ({ intervalKey, selector, onRenderCallback }) => {
         const element = document.querySelector(selector);
         if (element !== null) {
-        clearInterval(elementRenderListener.intervals[intervalKey]);
-        onRenderCallback(element);
+            clearInterval(elementRenderListener.intervals[intervalKey]);
+            onRenderCallback(element);
         }  
     },
     createIntervalUniqueKey: () => {
